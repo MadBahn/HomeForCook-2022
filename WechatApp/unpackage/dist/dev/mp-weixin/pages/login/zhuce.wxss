@@ -1,0 +1,39 @@
+
+.all{
+	width: 100vw;
+	/* height: 100vw;
+	background-color: white; */
+	/* height: 520px; */
+	padding-top: 40px;
+}
+.logo{
+	width: 100vw;
+	height: 50vw;	
+	/* background-color: red; */
+}
+.ipt{
+	margin-left: 10%;
+	margin-bottom: 10px;
+	padding-left: 15px;
+	width: 80%;
+	height: 30px;
+	background-color: #FFCD1E;
+	border-radius: 15px;
+}
+.zhuce{
+	margin-top: 20px;
+	width: 50%;
+	height: 40px;
+	line-height: 40px;
+	background-color: #FFCD1E;
+	color: white;
+}
+.container {
+	padding: 20px;
+	font-size: 14px;
+	line-height: 24px;
+}
+.input{
+	border: 1px red solid;
+}
+

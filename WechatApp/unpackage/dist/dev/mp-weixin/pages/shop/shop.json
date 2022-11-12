@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "商城",
+  "usingComponents": {
+    "custom-waterfalls-flow": "/uni_modules/custom-waterfalls-flow/components/custom-waterfalls-flow/custom-waterfalls-flow"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "详细",
+  "usingComponents": {
+    "u-swiper": "/components/u-swiper/u-swiper",
+    "uni-goods-nav": "/uni_modules/uni-goods-nav/components/uni-goods-nav/uni-goods-nav"
+  }
+}

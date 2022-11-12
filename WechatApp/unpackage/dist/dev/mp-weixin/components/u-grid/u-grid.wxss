@@ -1,0 +1,10 @@
+@charset "UTF-8";
+/* 水平间距 */
+/* 水平间距 */
+.u-grid.data-v-5a31c284 {
+  width: 100%;
+  position: relative;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+

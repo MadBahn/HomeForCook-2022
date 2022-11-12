@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "发送信息",
+  "usingComponents": {
+    "t-color-picker": "/components/t-color-picker"
+  }
+}

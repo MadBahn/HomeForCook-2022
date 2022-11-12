@@ -1,0 +1,148 @@
+{
+	"easycom": {
+	        // 下载安装的方式需要前面的"@/"，npm安装的方式无需"@/"
+	        // 下载安装方式
+	        "^u-(.*)": "@/components/u-$1/u-$1.vue"
+	        // npm安装方式
+	        // "^u-(.*)": "uview-ui/components/u-$1/u-$1.vue"
+	    },
+	"pages": [
+	{
+		"path": "pages/index/index",
+		"style": {
+			"navigationBarTitleText": "主页",
+			"enablePullDownRefresh": true,
+			"h5": {
+				"pullToRefresh": {
+					"support": true,
+					"type": "circle"
+				}
+			}
+		}
+	},
+	{
+		"path": "pages/browse/browse",
+		"style": {
+			"navigationBarTitleText": "浏览",
+			"enablePullDownRefresh": true
+		}
+	},
+	{
+		"path": "pages/message/addmss",
+		"style": {
+			"navigationBarTitleText": "发送信息"
+		}
+	},
+	{
+		"path": "pages/shop/shop",
+		"style": {
+			"navigationBarTitleText": "商城"
+		}
+	},
+	{
+		"path": "pages/my/my",
+		"style": {
+			"navigationBarTitleText": "我的"
+		}
+	},
+	
+	{
+		"path": "pages/tiezi/tiezi",
+		"style": {
+			"navigationBarTitleText": "帖子详情",
+			// 开启下拉刷新
+			"enablePullDownRefresh": true,
+			// 输入框弹出，内容页面上移
+			"app-plus": {
+				"softinputmode": "adjustResize"
+			}
+		}
+
+	},
+	
+	{
+		"path": "pages/shop/gooddetail",
+		"style": {
+			"navigationBarTitleText": "详细"
+		}
+	},
+	{
+		"path": "pages/login/login",
+		"style": {
+			"navigationBarTitleText": "登陆"
+		}
+	},{
+		"path": "pages/login/zhuce",
+		"style": {
+			"navigationBarTitleText": "注册"
+		}
+	},{
+		"path": "pages/shop/order",
+		"style": {
+			"navigationBarTitleText": "确认订单"
+		}
+	},{
+		"path": "pages/shop/order2",
+		"style": {
+			"navigationBarTitleText": "确认订单"
+		}
+	},{
+		"path": "pages/shop/MyOrder",
+		"style": {
+			"navigationBarTitleText": "我的订单"
+		}
+	},{
+		"path": "pages/shop/goodcar",
+		"style": {
+			"navigationBarTitleText": "购物车"
+		}
+	}],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8",
+		"app-plus": {
+			"background": "#efeff4"
+		}
+	},
+	"tabBar": {
+		"color": "#999999",
+		"selectedColor": "#FFCD1E",
+		"borderStyle": "black",
+		"backgroundColor": "#FFFFFF",
+		"iconWidth": "24px",
+		"list": [{
+				"pagePath": "pages/index/index",
+				"iconPath": "static/home.png",
+				"selectedIconPath": "static/home (1).png",
+				"text": "首页"
+			},
+			{
+				"pagePath": "pages/browse/browse",
+				"iconPath": "static/eye.png",
+				"selectedIconPath": "static/eye (1).png",
+				"text": "浏览"
+			},
+			
+			{
+				"pagePath": "pages/message/addmss",
+				"iconPath": "static/add.png",
+				"selectedIconPath": "static/add (1).png"
+			},
+			{
+				"pagePath": "pages/shop/shop",
+				"iconPath": "static/shop.png",
+				"selectedIconPath": "static/shop (1).png",
+				"text": "商城"
+			},
+			{
+				"pagePath": "pages/my/my",
+				"iconPath": "static/my.png",
+				"selectedIconPath": "static/my (1).png",
+				"text": "我的"
+			}
+			
+		]
+	}
+}

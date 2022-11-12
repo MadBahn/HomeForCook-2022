@@ -1,0 +1,38 @@
+
+page {
+    background-color: #f2f5f9;
+}
+
+@charset "UTF-8";
+/* 水平间距 */
+/* 水平间距 */
+.handle.data-v-71bf3ec6 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-bottom: 20rpx;
+  padding: 10rpx;
+}
+.handle .btn.data-v-71bf3ec6 {
+  margin: 20rpx 10rpx;
+  padding: 0 20rpx;
+  background: #2878FF;
+  font-size: 28rpx;
+  color: #fff;
+}
+.handle .btn.data-v-71bf3ec6::after {
+  border: 0;
+}
+.item.data-v-71bf3ec6 {
+  padding: 10rpx 10rpx 20rpx;
+}
+.item .title.data-v-71bf3ec6 {
+  line-height: 48rpx;
+  font-size: 28rpx;
+  color: #222;
+}
+.item .desc.data-v-71bf3ec6 {
+  font-size: 24rpx;
+  color: #666;
+}
+
