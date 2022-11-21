@@ -158,31 +158,42 @@
 		},
 		methods: {
 			//修改头像
-			select(e){
-				console.log(e.tempFilePaths[0])
+			select: async function(e){
 				let _self = this
 				if(!_self.user) return
 				let newhead = e.tempFilePaths[0]
-				uni.request({
-					url: 'http://localhost:3000/api/user/mod_info',
-					method: 'POST',
-					data: {
-						"userid":_self.user.userid,
-						"newInfo":{
-							"headImg":newhead
-						}
-					},
-					success(res) {
-						console.log('修改成功');
-						_self.user.headImg = newhead
-						
-						try {
-							uni.setStorageSync('user', _self.user);
-						} catch (e) {
-							// error
-						}
+				await uni.uploadFile({
+					url: 'http://localhost:3000/api/file/upload_file',
+					filePath: newhead,
+					name: 'file',
+					success: async function(r) {
+						const re = (JSON.parse(r.data))[0];
+						const li = re.path.toString().split("\\");
+						const n_path = li[0] + "/" + li[1];
+						await uni.request({
+							url: 'http://localhost:3000/api/user/mod_info',
+							method: 'POST',
+							data: {
+								"userid":_self.user.userid,
+								"newInfo":{
+									"headImg":"http://localhost:3000/"+n_path
+								}
+							},
+							success(res) {
+								console.log('修改成功', res.data.data);
+								_self.user.headImg = res.data.data.headImg;
+								
+								try {
+									uni.setStorageSync('user', _self.user);
+								} catch (e) {
+									// error
+								}
+							}
+						})
 					}
-				});	
+				});
+				
+				;	
 			},
 			success(e){
 				console.log('上传成功')
