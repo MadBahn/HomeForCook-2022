@@ -1,0 +1,13 @@
+{
+  "server_url": "http://localhost:3000",
+  "api": {
+    "count": "/api/manage/count",
+    "get_notify": "/api/manage/get_notify",
+    "exec_notify": "/api/manage/exec_notify",
+    "get_data": "/api/manage/data",
+    "lock_content": "/api/content/delete_content",
+    "lock_user": "/api/user/delete_user",
+    "delete_complete": "/api/manage/del_content_complete",
+    "remove_ban": "/api/manage/remove_blacklist"
+  }
+}
